@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  photo-web:
+    container_name: photo-web1
+    image: photo-web1
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    command: npm run start
+volumes:
+  pgdata:

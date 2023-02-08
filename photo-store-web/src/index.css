@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.clickableWhite:hover {
+  cursor: pointer;
+  color: #B3E4FF;
+}
+
+.highlight-hover:hover {
+  backdrop-filter: brightness(1.1);
+}
+
+.highlight-hover2:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.highlight-hover3:hover {
+  color: #B3E4FF;
+}
+
+.code {
+  font-family: "Courier New", serif;
+}
+
+.big-button {
+  width: 20vh;
+}
+
+.combobox {
+  margin-left: 42%;
+  margin-right: 42%;
+}

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  photo-web:
+    container_name: photo-web2
+    image: photo-web2
+    volumes:
+      - ./photo-store-web:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    command: npm start
+
+  photo-server:
+    container_name: photo-server2
+    image: photo-server2
+    volumes:
+      - ./photo-store-server:/app
+      - /app/node_modules
+    ports:
+      - 3001:3001
+    command: npm run start:dev
+
+  photo-microservice:
+    container_name: photo-microservice2
+    image: photo-microservice2
+    volumes:
+      - ./photo-store-microservice:/app
+      - /app/node_modules
+    ports:
+      - 3002:3002
+    command: npm run start:dev
